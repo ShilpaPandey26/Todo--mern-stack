@@ -4,53 +4,54 @@
   padding: 0;
 }
 
-body {
-  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(95,117,227,1) 0%, rgba(188,167,205,1) 90% );
-  color: #fff;
-}
 
+body{
+  background-color: #784ba0 ;
+ 
+}
 .container {
   margin: 0 auto;
-  max-width: fit-content;
+  max-width: 50vh;
   padding-top: 2rem;
-}
-
-.title {
-  text-align: center;
-  font-size: 3rem;
-  font-family: c;
-}
-
-.input_holder {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 60px;
-}
-
-input,
-button {
-  padding: 14px 20px;
-  background-color: #044764;
-  color: #fff;
-  outline: none;
-  border: none;
-  font-size: 1.1rem;
   
 }
 
-input {
-  width: 200px;
+.title {
+ text-align: center;
+  font-size: 2.5rem;
+  padding-bottom:1rem;
+  color: rgb(2, 34, 62);
+  font-style: italic; 
+  font-family: 'Lucida Handwriting', cursive, sans-serif;
+
 }
 
-input::placeholder {
-  color: #fff;
+
+
+input{
+  width: 67%;
+  padding: 8px;
+  border: 2px solid transparent;
+  outline: none;
+  font-size: 19px;
+  border-radius: 10px;
+  margin-right: 1rem;;
+  
 }
 
-button:hover {
+button{
+  width:20%;
+  height: 41px;
+  background-color:orangered;
+  color: white;
+  border: none;
   cursor: pointer;
-  background-color: #03587d;
+  outline: none;
+  border-radius: 10px;
+  font-size: 19px;      
 }
+
+
 
 .list {
   margin-top: 20px;
@@ -60,12 +61,15 @@ button:hover {
 }
 
 .toDo {
-  background-color: #03587d;
+  background-color:rgb(214, 91, 214) ;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+ color:white;
+ font-size: 1.2rem;
 }
+
 
 .icons {
   display: flex;
@@ -76,60 +80,13 @@ button:hover {
   cursor: pointer;
   color: #cfcfcf;
 }
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: #0000006c;
-  display: grid;
-  place-items: center;
+.backdrop{
+  width:20%;
+  margin: 0 auto;;
 }
 
-.popup {
-  position: relative;
-  background-color: #03587d;
-  width: 400px;
-  padding: 10px;
-}
 
-.cross {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 10px;
-  cursor: pointer;
-}
 
-.cross:hover {
-  color: #c4c4c4;
-}
 
-.popup h1 {
-  text-align: center;
-  font-weight: 500;
-}
 
-.popup__input_holder {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  padding-bottom: 30px;
-}
 
-.popup__input_holder input,
-.popup__input_holder button {
-  background-color: #fff;
-  color: #000;
-}
-
-.popup__input_holder input::placeholder {
-  color: #03587d;
-}
-
-.popup__input_holder button:hover {
-  background-color: #c4c4c4;
-}
